@@ -28,7 +28,7 @@ Supply the following:
 - Desired security to use
 - AMI name (use the same name you specified in `secrets.json`)
 
-**4. Build the EC2 instance.**
+**4. Build the EC2 instance and Kinesis Firehose Stream.**
 ```
 cd terraform
 terraform init
