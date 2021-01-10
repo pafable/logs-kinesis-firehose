@@ -1,0 +1,19 @@
+{
+    "cloudwatch.emitMetrics": true,
+    "kinesis.endpoint": "",
+    "firehose.endpoint": "firehose.us-west-1.amazonaws.com",
+  
+    "flows": [
+      {
+        "filePattern": "/var/log/nginx/access.log*",
+        "deliveryStream": "kinesis-example-delivery-stream-us-west-1",
+        "partitionKeyOption": "RANDOM",
+        "dataProcessingOptions": [
+            {
+                "optionName": "LOGTOJSON",
+                "logFormat": "COMMONAPACHELOG"
+            }
+        ]
+      }
+    ]
+  }

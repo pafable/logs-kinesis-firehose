@@ -1,0 +1,6 @@
+region   = ""
+aws_id   = ""
+key      = ""
+aws_sg   = ""
+ami-name = ""
+ec2_role = ""
